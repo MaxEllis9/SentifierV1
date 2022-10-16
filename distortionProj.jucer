@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bcw2Uj" name="distortionPluginV1" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="1" displaySplashScreen="1"
+              jucerFormatVersion="1" cppLanguageStandard="17" headerPath="/usr/local/Cellar/opencv/4.6.0/include/opencv4&#10;/usr/local/include"
+              pluginFormats="buildAU,buildStandalone,buildVST3">
+  <MAINGROUP id="Bj19u2" name="distortionPluginV1">
+    <GROUP id="{B1B8DF92-13F2-F555-0D53-EA2F728CFE65}" name="Source">
+      <FILE id="hvjJQn" name="NeuralNetwork.cpp" compile="1" resource="0"
+            file="Source/NeuralNetwork.cpp"/>
+      <FILE id="HYdJwv" name="NeuralNetwork.h" compile="0" resource="0" file="Source/NeuralNetwork.h"/>
+      <FILE id="ZfBNsW" name="ImageAnalyser.cpp" compile="1" resource="0"
+            file="Source/ImageAnalyser.cpp"/>
+      <FILE id="pDNpO7" name="ImageAnalyser.h" compile="0" resource="0" file="Source/ImageAnalyser.h"/>
+      <FILE id="yg9jod" name="ResponseCurve.cpp" compile="1" resource="0"
+            file="Source/ResponseCurve.cpp"/>
+      <FILE id="y852mH" name="ResponseCurve.h" compile="0" resource="0" file="Source/ResponseCurve.h"/>
+      <FILE id="sQuWcu" name="SoftClip.cpp" compile="1" resource="0" file="Source/SoftClip.cpp"/>
+      <FILE id="cVCWwX" name="SoftClip.h" compile="0" resource="0" file="Source/SoftClip.h"/>
+      <FILE id="JcZT8d" name="Distortion.cpp" compile="1" resource="0" file="Source/Distortion.cpp"/>
+      <FILE id="cdaUqk" name="Distortion.h" compile="0" resource="0" file="Source/Distortion.h"/>
+      <GROUP id="{1F9CAD65-AE87-73CB-A8F0-4C99D952441F}" name="Components">
+        <FILE id="yYTzFC" name="GainMeter.h" compile="0" resource="0" file="Source/GainMeter.h"/>
+      </GROUP>
+      <FILE id="wPbMSX" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="YF6F8n" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="ky69Ld" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="i6SD2G" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <GROUP id="{F4D8FDF2-C35B-998D-97E6-5473B9260CF5}" name="images">
+      <FILE id="wD1Dg7" name="highCutNewWhite.png" compile="0" resource="1"
+            file="images/highCutNewWhite.png"/>
+      <FILE id="F1lFVj" name="imageUpload.png" compile="0" resource="1" file="images/imageUpload.png"/>
+      <FILE id="IenY1z" name="lowCutNewWhite.png" compile="0" resource="1"
+            file="images/lowCutNewWhite.png"/>
+      <FILE id="zik3Z5" name="switchOffBlue.png" compile="0" resource="1"
+            file="images/switchOffBlue.png"/>
+      <FILE id="PYCF1e" name="switchOnBlue.png" compile="0" resource="1"
+            file="images/switchOnBlue.png"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraLinkerFlags="-I/usr/local/opt/opencv/include/opencv4&#10;-L/usr/local/opt/opencv/lib&#10;-lopencv_gapi&#10;-lopencv_stitching&#10;-lopencv_alphamat&#10;-lopencv_aruco&#10;-lopencv_barcode&#10;-lopencv_bgsegm&#10;-lopencv_bioinspired&#10;-lopencv_ccalib&#10;-lopencv_dnn_objdetect&#10;-lopencv_dnn_superres&#10;-lopencv_dpm&#10;-lopencv_face&#10;-lopencv_freetype&#10;-lopencv_fuzzy&#10;-lopencv_hfs&#10;-lopencv_img_hash&#10;-lopencv_intensity_transform&#10;-lopencv_line_descriptor&#10;-lopencv_mcc&#10;-lopencv_quality&#10;-lopencv_rapid&#10;-lopencv_reg&#10;-lopencv_rgbd&#10;-lopencv_saliency&#10;-lopencv_sfm&#10;-lopencv_stereo&#10;-lopencv_structured_light&#10;-lopencv_phase_unwrapping&#10;-lopencv_superres&#10;-lopencv_optflow&#10;-lopencv_surface_matching&#10;-lopencv_tracking&#10;-lopencv_highgui&#10;-lopencv_datasets&#10;-lopencv_text&#10;-lopencv_plot&#10;-lopencv_videostab&#10;-lopencv_videoio&#10;-lopencv_viz&#10;-lopencv_wechat_qrcode&#10;-lopencv_xfeatures2d&#10;-lopencv_shape&#10;-lopencv_ml&#10;-lopencv_ximgproc&#10;-lopencv_video&#10;-lopencv_xobjdetect&#10;-lopencv_objdetect&#10;-lopencv_calib3d&#10;-lopencv_imgcodecs&#10;-lopencv_features2d&#10;-lopencv_dnn&#10;-lopencv_flann&#10;-lopencv_xphoto&#10;-lopencv_photo&#10;-lopencv_imgproc&#10;-lopencv_core">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="distortionProj" defines="JUCE_MODAL_LOOPS_PERMITTED=1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="distortionProj"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="viator_modules" path="../viatorModules/viatordsp-main"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="viator_modules" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>
