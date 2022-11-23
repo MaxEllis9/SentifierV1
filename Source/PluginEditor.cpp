@@ -581,6 +581,8 @@ onOffBulb(Colours::lawngreen)
     auto lowPassSymbol = ImageCache::getFromMemory(BinaryData::highCutNewWhite_png, BinaryData::highCutNewWhite_pngSize);
     lowPassSymbolImg.setImage(lowPassSymbol);
     
+    logo.setImage(ImageCache::getFromMemory(BinaryData::logo1_png, BinaryData::logo1_pngSize));
+    
     auto switchOnImg = ImageCache::getFromMemory(BinaryData::switchOnBlue_png, BinaryData::switchOnBlue_pngSize);
     
     auto switchOffImg = ImageCache::getFromMemory(BinaryData::switchOffBlue_png, BinaryData::switchOffBlue_pngSize);
@@ -1093,12 +1095,14 @@ void DistortionProjAudioProcessorEditor::resized()
     inputGainLabel.setBounds(meterLabels.removeFromLeft(meterLabels.getWidth() * 0.5));
     outputGainLabel.setBounds(meterLabels);
     
-    nameLabel.setBounds(titleBar);
+//    nameLabel.setBounds(titleBar);
     
     
     mixKnobLabel.setBounds(mixSpacer);
     
     imageAnalysisOutput.setBounds(imageAnalysisOutputArea.getX(), imageAnalysisOutputArea.getY(), imageAnalysisOutputArea.getWidth(), imageAnalysisOutputArea.getHeight());
+    
+    logo.setBounds(titleBar.expanded(21.f));
     
 }
 
@@ -1134,7 +1138,8 @@ std::vector<juce::Component*> DistortionProjAudioProcessorEditor::getComponents(
         &outGainLabel,
         &loadImageButton,
         &menuButton,
-        &onOffBulb
+        &onOffBulb,
+        &logo
         
     };
 }

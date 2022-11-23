@@ -350,7 +350,7 @@ private:
     
     ComboBox distortionType;
     
-    ImageComponent imageUpload, lowPassSymbolImg, highPassSymbolImg;
+    ImageComponent imageUpload, lowPassSymbolImg, highPassSymbolImg, logo;
     
     TextButton loadImageButton {"Upload Image"}, menuButton {"Menu"};
     

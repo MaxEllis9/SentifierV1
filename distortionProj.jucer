@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="bcw2Uj" name="distortionPluginV1" projectType="audioplug"
               useAppConfig="0" addUsingNamespaceToJuceHeader="1" displaySplashScreen="1"
-              jucerFormatVersion="1" cppLanguageStandard="17" headerPath="/usr/local/Cellar/opencv/4.6.0/include/opencv4&#10;/usr/local/include"
+              jucerFormatVersion="1" cppLanguageStandard="17" headerPath="/usr/local/Cellar/opencv/4.6.0_1/include/opencv4&#10;/usr/local/include"
               pluginFormats="buildAU,buildStandalone,buildVST3">
   <MAINGROUP id="Bj19u2" name="distortionPluginV1">
     <GROUP id="{B1B8DF92-13F2-F555-0D53-EA2F728CFE65}" name="Source">
@@ -34,6 +34,7 @@
       <FILE id="wD1Dg7" name="highCutNewWhite.png" compile="0" resource="1"
             file="images/highCutNewWhite.png"/>
       <FILE id="F1lFVj" name="imageUpload.png" compile="0" resource="1" file="images/imageUpload.png"/>
+      <FILE id="gmJ0cv" name="logo1.png" compile="0" resource="1" file="images/logo1.png"/>
       <FILE id="IenY1z" name="lowCutNewWhite.png" compile="0" resource="1"
             file="images/lowCutNewWhite.png"/>
       <FILE id="zik3Z5" name="switchOffBlue.png" compile="0" resource="1"
