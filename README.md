@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69329e13665a28fb78b496051123136c513c6f2e678407a423e5a3f839c6f828
-size 152
+# SentifierV2
+JUCE based VST distortion plugin that generates an audio distortion patch based on the hue saturation and value of an input image to replicate the emotion of the image in the sound
+![alt text](./readmeMedia/V1finalGUI.png)

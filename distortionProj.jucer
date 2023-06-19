@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="bcw2Uj" name="distortionPluginV1" projectType="audioplug"
-              useAppConfig="0" addUsingNamespaceToJuceHeader="1" displaySplashScreen="1"
-              jucerFormatVersion="1" cppLanguageStandard="17" headerPath="/usr/local/Cellar/opencv/4.6.0_1/include/opencv4&#10;/usr/local/include"
+<JUCERPROJECT id="bcw2Uj" name="Sentifier V1" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              cppLanguageStandard="17" headerPath="/usr/local/Cellar/opencv/4.6.0_1/include/opencv4&#10;/usr/local/include"
               pluginFormats="buildAU,buildStandalone,buildVST3">
-  <MAINGROUP id="Bj19u2" name="distortionPluginV1">
+  <MAINGROUP id="Bj19u2" name="Sentifier V1">
     <GROUP id="{B1B8DF92-13F2-F555-0D53-EA2F728CFE65}" name="Source">
       <FILE id="hvjJQn" name="NeuralNetwork.cpp" compile="1" resource="0"
             file="Source/NeuralNetwork.cpp"/>
